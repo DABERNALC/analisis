@@ -1,0 +1,37 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="{% static 'urbanohome/styles/index.css' %}">
+</head>
+
+<body>
+    <div class="logo">
+        <div class="sublogo">
+            <img src="{% static 'urbanohome/images/logo.png' %}" alt="Logo de UrbanoHome">
+        </div>
+    </div>
+    <div class="login_text">
+        <h1>Bienvenido (a) al sistema de apoyo contable BlueScreen</h1>
+        <p>Working for startups...</p>
+
+        <form action="">
+            Email <br>
+            <input type="email" name="email" id="emailId" placeholder="example@email.com"> <br>
+            Contraseña <br>
+            <input type="password" name="password" id="passwordId" placeholder="********"> <br>
+            <input type="submit" value="Ingresar">
+        </form>
+    </div>
+    <!--{% for product_item in products %}
+    <h2>{{ product_item.title }}</h2>
+    <h2>{{ product_item.precio }}</h2>
+    {% endfor %}-->
+</body>
+
+</html>
