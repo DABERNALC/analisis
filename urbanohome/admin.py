@@ -1,8 +1,7 @@
 from django.contrib import admin
 from .models import Producto, Color, TipoIdentificacion, TipoProducto, Venta, Cliente
 # Register your models here.
-
-
+#DBCA was here!
 class ProductoAdmin(admin.ModelAdmin):
     list_display = ('nombre', 'precio_compra', 'precio_venta', 'stock', 'color')
     list_filter = ('nombre', 'precio_compra', 'precio_venta', 'stock')
